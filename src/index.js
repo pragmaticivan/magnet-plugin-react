@@ -1,7 +1,7 @@
 import {createElement} from 'react';
 import {renderToString} from 'react-dom/server';
 import {assertDefAndNotNull, assertString} from 'metal-assertions';
-import {isObject, isRegex, core, isFunction, isDefAndNotNull} from 'metal';
+import {isObject, core, isFunction, isDefAndNotNull} from 'metal';
 import babelReact from 'babel-preset-react';
 import nodePath from 'path';
 import start from './start';
@@ -184,4 +184,13 @@ function registerRoute(route) {
     route.path = `regex:${route.path.toString()}`;
   }
   routes.push(route);
+}
+
+/**
+ * Tests if value is regex.
+ * @param {*} value
+ * @return {boolean}
+ */
+function isRegex(value) {
+  return Object.prototype.toString.call(value) === '[object RegExp]';
 }
