@@ -1,0 +1,15 @@
+{
+  "extends": ["liferay"],
+  "env": {
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "globals": {
+    "__MAGNET_STATE__": true,
+    "__MAGNET_ROUTER__": true,
+    "__MAGNET_COMPONENT__": true,
+    "document": true,
+    "window": true
+  }
+}
