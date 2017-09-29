@@ -1,6 +1,6 @@
 {
   "name": "magnet-plugin-react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Magnet plugin for react support",
   "engines": {
     "node": ">=7.6.0"
